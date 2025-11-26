@@ -1,43 +1,41 @@
-# Project-1
-sanke water Gun Game
-1. Computer's choice
+# Sanke , Water, Gun  game 
+🐍💧🔫 Snake–Water–Gun Game (C Program)
 
-rand() % 3 gives a number: 0, 1, or 2
+A simple and fun command-line game written in C where you play Snake–Water–Gun against the computer. The computer makes a random choice, and your goal is to beat it based on the game rules.
 
-We map:
+📌 Game Rules
+Choice	Emoji	Beats
+Snake (0)	🐍	Water 💧
+Water (1)	💧	Gun 🔫
+Gun (2)	🔫	Snake 🐍
 
-0 → snake
+Same choices → Draw 😐
 
-1 → water
+Follow the winning chain → Victory 🎉
 
-2 → gun
+▶️ How to Play
 
-2. Your input
+Run the program in a C-supported environment (GCC recommended).
 
-You enter:
+Enter one of the options:
 
-s → snake
+0 → 🐍 Snake
 
-w → water
+1 → 💧 Water
 
-g → gun
+2 → 🔫 Gun
 
-3. Game rules logic
+The computer randomly makes its selection.
 
-This classic rule set:
+The winner is displayed on the screen.
 
-Snake drinks water → Snake wins
+🧠 How It Works
 
-Water ruins gun → Water wins
+Uses rand() with time(0) to generate a pseudo-random computer move.
 
-Gun kills snake → Gun wins
+Compares the choices using simple game logic.
 
-Same → Draw
+Prints whether the player wins, loses, or draws.
+Simpel output 
+<img width="829" height="370" alt="image" src="https://github.com/user-attachments/assets/945d79d1-c935-4306-adf5-e6b91c06778a" />
 
-4. Output
-
-The program prints:
-
-Computer’s choice
-
-Whether you win/lose/draw
